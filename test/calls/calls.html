@@ -1,0 +1,14 @@
+
+GET http://localhost:3000 http/1.1
+
+
+###
+
+POST http://ipv4.fiddler:3000/transfer?name=onlyme http/1.1
+content-type: application/json
+
+{
+    "from": "savings",
+    "to": "checking",
+    "amount": 100
+}
